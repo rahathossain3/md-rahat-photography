@@ -1,0 +1,19 @@
+.service-card {
+    height: 450px;
+}
+
+.card-img {
+    height: 250px;
+    width: 100%;
+}
+
+.card-info {
+    text-align: justify;
+    color: black;
+}
+
+.package-price {
+    font-size: 16px;
+    color: orange;
+
+}

@@ -16,6 +16,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
 
 
+
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
