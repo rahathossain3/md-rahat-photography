@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    color: white;
+}
+
+.footer a,
+span {
+    text-decoration: none;
+    padding: 10px;
+    color: orange;
+}
+
+.footer a:hover,
+span:hover {
+    color: white;
+}
