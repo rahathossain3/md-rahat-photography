@@ -17,7 +17,7 @@ const Reviews = () => {
 
             <div className='review-container' >
                 {
-                    reviews.slice(2).map(review => <Review
+                    reviews.map(review => <Review
                         key={review.id}
                         review={review}
                     ></Review>)
