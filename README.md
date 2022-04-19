@@ -4,6 +4,8 @@
 
 {https://github.com/programming-hero-web-course-4/independent-service-provider-rahathossain3}
 
+live site: https://md-rahat-photography.web.app/
+
 
 ## using frameworks and libraries 
 
@@ -25,5 +27,5 @@
 * Blogs added
 * About me
 * Login option and Sign Up system Add
-* 
-* 
+* email varify done 
+* google and github login done
