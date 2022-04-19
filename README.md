@@ -23,4 +23,6 @@
 * responsive for mobile . screen size is (max-width: 576px)
 * service added
 * Blogs added
+* About me
+* 
 * 
