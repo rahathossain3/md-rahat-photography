@@ -18,3 +18,12 @@
     box-shadow: 3px 0px 2px lightgreen;
     margin-right: 15px;
 }
+
+
+@media only screen and (max-width:576px) {
+
+    .review-section {
+        display: flex;
+        flex-direction: column;
+    }
+}

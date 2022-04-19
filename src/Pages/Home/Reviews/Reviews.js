@@ -12,7 +12,7 @@ const Reviews = () => {
     }, [])
 
     return (
-        <div id='review'>
+        <div className='text-center mt-4'>
             <h2 className='title'>Happy Client Review </h2>
 
             <div className='review-container' >

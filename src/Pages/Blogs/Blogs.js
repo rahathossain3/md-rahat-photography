@@ -3,7 +3,7 @@ import './Blogs.css'
 
 const Blogs = () => {
     return (
-        <div className='mt-4 p-4'>
+        <div className='mt-4 p-4 text-center'>
             <h2>Questions Answer </h2>
             <div className='blogs'>
 
@@ -37,7 +37,7 @@ const Blogs = () => {
                 {/* qus 2----------------- */}
                 <div className=' mb-3 mt-3 border-contain'>
                     <h1 >
-                        <samp className=' text-info'>Qus 1:</samp>
+                        <samp className=' text-info'>Qus 2:</samp>
                         <span className='blogs-title'>
                             Why are you using firebase? What other options do you have to implement authentication?
                         </span>
@@ -64,7 +64,7 @@ const Blogs = () => {
                 {/* qus 3----------------- */}
                 <div className=' mb-3 mt-3 border-contain'>
                     <h1 >
-                        <samp className=' text-info'>Qus 1:</samp>
+                        <samp className=' text-info'>Qus 3:</samp>
                         <span className='blogs-title'>
                             What other services does firebase provide other than authentication?
                         </span>

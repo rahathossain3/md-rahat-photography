@@ -13,7 +13,7 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
       <Header></Header>
 

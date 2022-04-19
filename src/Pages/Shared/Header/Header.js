@@ -1,12 +1,12 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../../image/logo.png';
 import './Header.css'
 
 const Header = () => {
     return (
-        <Navbar sticky='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar className='text-center' sticky='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand as={Link} to="/home">
                     <img className='site-logo mx-1' src={logo} alt="" />

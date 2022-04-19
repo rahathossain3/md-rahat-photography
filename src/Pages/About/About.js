@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
     return (
-        <div className='container-fluid p5 py-5 bg-dark'>
+        <div className='container-fluid text-center p5 py-5 bg-dark'>
             <h1 className=' text-white '>About My self</h1>
             <div className=' mt-5 outline'>
                 <img className='my-img'
