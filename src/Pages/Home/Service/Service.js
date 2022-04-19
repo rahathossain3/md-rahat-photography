@@ -7,12 +7,14 @@ import './Service.css'
 const Service = ({ service }) => {
     const { id, name, img, price, details } = service;
 
+
     // single package 
 
     const navigate = useNavigate();
 
+    // going 
     const navigateToServiceDetail = id => {
-        navigate(`/service/${id}`);
+        navigate(`/checkout/${id}`);
 
     }
 
@@ -33,7 +35,7 @@ const Service = ({ service }) => {
                 BDT
             </h4>
             <Card.Footer className=' border-0'>
-                <Button className='w-75 checkout' onClick={() => navigateToServiceDetail(id)} >Checkout</Button>
+                <Button className='w-75 checkout' onClick={() => navigateToServiceDetail(name)} >Checkout</Button>
             </Card.Footer>
 
         </Card>

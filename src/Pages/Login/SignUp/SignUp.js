@@ -47,15 +47,15 @@ const SignUp = () => {
 
     const handleSignup = async (event) => {
         event.preventDefault();
-        const name = event.target.name.value;
+        const displayName = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
 
         await createUserWithEmailAndPassword(email, password);
 
-        // await updateProfile({ displayName: name });
-
+        await updateProfile({ displayName });
+        // navigate('/home');
     }
 
 

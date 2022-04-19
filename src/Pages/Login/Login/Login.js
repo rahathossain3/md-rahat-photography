@@ -19,7 +19,7 @@ const Login = () => {
     let from = location.state?.from?.pathname || "/";
 
     //--------------
-    let errorMessage;
+    let errorElement;
 
 
 
@@ -33,11 +33,11 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     // password 
-    const [sendPasswordResetEmail, sendingEmail] = useSendPasswordResetEmail(auth);
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
 
 
-    if (loading || sendingEmail) {
+    if (loading || sending) {
         return <Loading></Loading>
     }
 
@@ -51,7 +51,7 @@ const Login = () => {
     //------------------
     if (error) {
 
-        errorMessage = <p className=' text-danger'>Error: {error?.message}</p>
+        errorElement = <p className=' text-danger'>Error: {error?.message}</p>
 
     }
 
@@ -77,13 +77,12 @@ const Login = () => {
 
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Email Send');
+            toast('Sent email');
         }
         else {
-            toast('Please enter your Email')
+            toast('please enter your email address')
         }
     }
-
 
     return (
         <div className='mt-2 mb-5  give-info mx-auto'>
@@ -105,7 +104,7 @@ const Login = () => {
                 </Button>
             </Form>
 
-            {errorMessage}
+            {errorElement}
 
             <div>
                 <p className='mb-0'> Have Not any Account?
