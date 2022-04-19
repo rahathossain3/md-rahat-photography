@@ -1,10 +1,25 @@
 import React from 'react';
+import './Review.css'
 
-const Review = () => {
+const Review = ({ review }) => {
+    const { name, picture, comments } = review;
+
+
     return (
-        <div id='review'>
-            <h2 className='title'>Client Review</h2>
-        </div>
+        <div className='review-section container p-3'>
+            <img src={picture} alt="" />
+            <div>
+                <h4>{name}</h4>
+
+                <p className=' text-wrap' title={comments}>
+                    {comments}
+
+                </p>
+
+
+            </div>
+
+        </div >
     );
 };
 
