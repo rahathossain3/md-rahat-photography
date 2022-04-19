@@ -1,19 +1,37 @@
 .service-card {
-    height: 450px;
+    height: 500px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px rgb(241, 182, 133);
 }
 
 .card-img {
     height: 250px;
     width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.card-title {
+    color: orange;
+    text-shadow: 1px 1px rgb(131, 115, 97);
 }
 
 .card-info {
-    text-align: justify;
+    text-align: left;
     color: black;
 }
 
 .package-price {
-    font-size: 16px;
-    color: orange;
+    font-size: 20px;
+}
 
+.package-price span {
+    color: rgb(189, 123, 0);
+    font-weight: 600;
+}
+
+
+.service-card:hover {
+    background-color: rgba(250, 241, 241, 0.233);
 }

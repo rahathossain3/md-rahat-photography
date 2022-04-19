@@ -7,26 +7,27 @@ const Service = ({ service }) => {
     const { name, img, price, details } = service;
 
     return (
-        <div>
 
-            <Card className='service-card'>
-                <Card.Img className='card-img' variant="top" src={img} />
-                <Card.Body>
-                    <Card.Title>{name}</Card.Title>
-                    <Card.Text className='card-info'>
-                        {details}
-                    </Card.Text>
-                    <span className='package-price'>Package Price: {price}</span>
-                </Card.Body>
-                <Card.Footer className=' bg-white border-0'>
-                    <Button className='w-75' >Checkout</Button>
-                </Card.Footer>
+        <Card className='service-card'>
+            <Card.Img className='card-img w-100' variant="top" src={img} />
+            <Card.Body>
+                <Card.Title> <h3 className='card-title'>{name}</h3></Card.Title>
+                <Card.Text className='card-info'>
+                    {details}
+                </Card.Text>
 
-            </Card>
+            </Card.Body>
+            <h4 className='package-price'>Package Price:
+                <span> {price} </span>
+                BDT
+            </h4>
+            <Card.Footer className=' border-0'>
+                <Button className='w-75 checkout' >Checkout</Button>
+            </Card.Footer>
+
+        </Card>
 
 
-
-        </div>
     );
 };
 

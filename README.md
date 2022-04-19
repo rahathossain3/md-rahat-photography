@@ -20,4 +20,6 @@
 * responsive header
 * responsive footer
 * Not found route set
+* responsive for mobile . screen size is (max-width: 576px)
+* 
 * 

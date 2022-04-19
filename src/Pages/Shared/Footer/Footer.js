@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className='container-fluid footer bg-dark'>
+        <footer className='container-fluid page-footer bg-dark'>
             <div className='p-2'>
                 <h6>Flowing on</h6>
                 <a target='blank' href="https://www.facebook.com/Rahat.Imon.01/">
