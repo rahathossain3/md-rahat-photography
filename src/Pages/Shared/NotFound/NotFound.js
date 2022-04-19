@@ -2,7 +2,7 @@ import React from 'react';
 
 const NotFound = () => {
     return (
-        <div>
+        <div className='text-center'>
             <h1 style={{ color: 'orange', fontFamily: "monospace", fontSize: '70px' }}>
                 <samp style={{ fontSize: '150px' }}>404 </samp>
                 <br />

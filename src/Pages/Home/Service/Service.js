@@ -1,10 +1,21 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './Service.css'
 
 
 const Service = ({ service }) => {
-    const { name, img, price, details } = service;
+    const { id, name, img, price, details } = service;
+
+    // single package 
+
+    const navigate = useNavigate();
+
+    const navigateToServiceDetail = id => {
+        navigate(`/service/${id}`);
+
+    }
+
 
     return (
 
@@ -22,7 +33,7 @@ const Service = ({ service }) => {
                 BDT
             </h4>
             <Card.Footer className=' border-0'>
-                <Button className='w-75 checkout' >Checkout</Button>
+                <Button className='w-75 checkout' onClick={() => navigateToServiceDetail(id)} >Checkout</Button>
             </Card.Footer>
 
         </Card>
