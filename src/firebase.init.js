@@ -6,12 +6,20 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB2CyEBJ6swLyRjLXKJw_44HQuQ7BOtyYA",
-    authDomain: "md-rahat-photography.firebaseapp.com",
-    projectId: "md-rahat-photography",
-    storageBucket: "md-rahat-photography.appspot.com",
-    messagingSenderId: "690183004518",
-    appId: "1:690183004518:web:6d2f9931ad5e2d7060a8a7"
+
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
+
+    // apiKey: "AIzaSyB2CyEBJ6swLyRjLXKJw_44HQuQ7BOtyYA",
+    // authDomain: "md-rahat-photography.firebaseapp.com",
+    // projectId: "md-rahat-photography",
+    // storageBucket: "md-rahat-photography.appspot.com",
+    // messagingSenderId: "690183004518",
+    // appId: "1:690183004518:web:6d2f9931ad5e2d7060a8a7"
 };
 
 // Initialize Firebase
